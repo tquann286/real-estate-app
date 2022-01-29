@@ -1,6 +1,9 @@
+import React from 'react'
 import Head from 'next/head'
 import { Box } from '@chakra-ui/react'
-import React from 'react'
+
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Layout = ({ children }) => (
 	<React.Fragment>
@@ -8,9 +11,13 @@ const Layout = ({ children }) => (
 			<title>Real Estate</title>
 		</Head>
 		<Box maxWidth='1280px' m='auto'>
-			<header>Navbar</header>
+			<header>
+				<Navbar />
+			</header>
 			<main>{children}</main>
-			<footer>Footer</footer>
+			<footer>
+				<Footer />
+			</footer>
 		</Box>
 	</React.Fragment>
 )
