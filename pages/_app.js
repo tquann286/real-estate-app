@@ -7,8 +7,6 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
-	console.log(Component)
-	console.log(pageProps)
 	return (
 		<React.Fragment>
 			<ChakraProvider>
