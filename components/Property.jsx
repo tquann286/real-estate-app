@@ -25,8 +25,9 @@ const Property = ({
 	<Link href={`/property/${externalID}`} passHref >
 		<Flex
 			flexWrap='wrap'
-			w='400px'
-			m='10px'
+			w={{ base: '400px', sm: '350px', md: '300px', lg: '300px', xl: '400px'}}
+			paddingBottom={5}
+			m='auto'
 			justifyContent='flex-start'
 			cursor='pointer'
 		>
